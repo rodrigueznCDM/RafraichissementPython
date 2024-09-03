@@ -57,7 +57,6 @@ elif exercices == "4":
 
 elif exercices == "5":
     print("\nPAIR OU IMPAIR CHOISIR\n")
-
     exit()
 
 elif exercices == "6":
