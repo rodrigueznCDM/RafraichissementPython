@@ -42,6 +42,21 @@ def d6():
     resultat = random.randint(1,6)
     return resultat
 
+def d6_choix():
+    i = 0
+    total = 0
+
+    nombre_d6 = int(input("combien de dé voulez vous lancer?:\n"))
+    print("")
+
+    while i < nombre_d6:
+        i = i + 1
+        lancer = random.randint(1,6)
+        print("lancer", i, ":", lancer)
+        total = total + lancer
+
+    print("\nle total de tout les lancers est de", total)
+
 
 exercices = input("quel exercice voulez vous regarder?:\n")
 
@@ -93,7 +108,10 @@ elif exercices == "6":
     exit()
 
 elif exercices == "7":
-    print("")
+    print("\nDES DÉ À SIX FACES\n")
+    d6_choix()
+    exit()
+
 
 else:
     exit()
